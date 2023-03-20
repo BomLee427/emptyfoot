@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', 'dotum' ;
+}
+
+body{
+	background: url(../img/red.png) no-repeat top;
+}

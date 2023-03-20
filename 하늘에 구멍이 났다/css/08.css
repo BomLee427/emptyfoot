@@ -1,0 +1,341 @@
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Serif KR', 'dotum' ;
+	font-size: .95em;
+}
+
+html{
+	min-height: 100vh;
+}
+
+body{
+	background: -webkit-linear-gradient(to right,#320000 5%,#000 30%,#000 70%,#320000 99%);
+	background: -moz-linear-gradient(to right,#320000 5%,#000 30%,#000 70%,#320000 99%);
+	background: -o-linear-gradient(to right,#320000 5%,#000 30%,#000 70%,#320000 99%);
+	background: -ms-linear-gradient(to right,#320000 5%,#000 30%,#000 70%,#320000 99%);
+	background: linear-gradient(to right,#320000 5%,#000 30%,#000 70%,#320000 99%);
+	overflow: hidden
+}
+
+
+.home{
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	z-index: 999;
+}
+
+.hole0{
+	border-radius: 50%;
+	border: dotted #870000 2px;
+	background: transparent;
+}
+
+.hole1{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: spin 15s linear infinite;
+	-moz-animation: spin 15s linear infinite;
+	-o-animation: spin 15s linear infinite;
+	-ms-animation: spin 15s linear infinite;
+	animation: spin 15s linear infinite;
+	z-index: -3;
+}
+
+.hole2{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -35px;
+	margin-left: -35px;
+	width: 70px;
+	height: 70px;
+	-webkit-animation: spin 15s linear reverse infinite;
+	-moz-animation: spin 15s linear reverse infinite;
+	-o-animation: spin 15s linear reverse infinite;
+	-ms-animation: spin 15s linear reverse infinite;
+	animation: spin 15s linear reverse infinite;
+	z-index: -3;
+}
+
+.hole3{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -45px;
+	margin-left: -45px;
+	width: 90px;
+	height: 90px;
+	-webkit-animation: spin 15s linear infinite;
+	-moz-animation: spin 15s linear infinite;
+	-o-animation: spin 15s linear infinite;
+	-ms-animation: spin 15s linear infinite;
+	animation: spin 15s linear infinite;
+	z-index: -3;
+}
+
+.hole4{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -55px;
+	margin-left: -55px;
+	width: 110px;
+	height: 110px;
+	-webkit-animation: spin 15s linear reverse infinite;
+	-moz-animation: spin 15s linear reverse infinite;
+	-o-animation: spin 15s linear reverse infinite;
+	-ms-animation: spin 15s linear reverse infinite;
+	animation: spin 15s linear reverse infinite;
+	z-index: -3;
+}
+
+.hole5{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -65px;
+	margin-left: -65px;
+	width: 130px;
+	height: 130px;
+	-webkit-animation: spin 15s linear infinite;
+	-moz-animation: spin 15s linear infinite;
+	-o-animation: spin 15s linear infinite;
+	-ms-animation: spin 15s linear infinite;
+	animation: spin 15s linear infinite;
+	z-index: 1;
+}
+
+.dn{
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-left:-360px;
+	z-index: -1;
+}
+.up{
+	position: absolute;
+	bottom:0;
+	left:50%;
+	margin-left:-360px;
+	z-index: -1;
+}
+
+p{
+	padding : 1em;
+	font-family : monospace;
+	font-size:2em;
+}
+
+#reset{
+	display: none;
+}
+
+.text{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	writing-mode:tb-rl;
+	word-break: break-all;
+	color: rgba(255,255,255,.05);
+	font-weight: 100;
+	font-size:5em;
+	z-index: -3;
+	pointer-events: none;
+}
+
+.popup{
+	border:0;
+	border-radius: 50%;
+	pointer-events:painted;
+}
+
+.pwrap1{
+	display: inline;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.pwrap2{
+	display: inline;
+	position: absolute;
+	top:0;
+	left:100px;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.pwrap3{
+	display: inline;
+	position: absolute;
+	top:50px;
+	left:0;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.pwrap4{
+	display: inline;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.pwrap5{
+	display: inline;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.pwrap6{
+	display: inline;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.pwrap7{
+	display: inline;
+	position: absolute;
+	top:100px;
+	left:0;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.p1{
+	display: inline;
+	width: 200px;
+	height: 300px;
+	background:rgba(183,81,235,1.00);
+	z-index: 3;
+}
+
+.p2{
+	display: inline;
+	width: 300px;
+	height: 200px;
+	background:rgba(183,81,235,1.00);
+	z-index: 3;
+}
+
+.p3{
+	display: inline;
+	width: 300px;
+	height: 200px;
+	background:rgba(183,81,235,1.00);
+	z-index: 3;
+	transform: rotate(45deg);
+}
+
+.p4{
+	display: inline;
+	width: 200px;
+	height: 300px;
+	background:rgba(183,81,235,1.00);
+	z-index: 3;
+	transform: rotate(135deg);
+}
+
+.p5{
+	display: inline;
+	width: 200px;
+	height: 300px;
+	background:rgba(183,81,235,1.00);
+	z-index: 3;
+	transform: rotate(205deg);
+}
+
+.p6{
+	display: inline;
+	width: 200px;
+	height: 300px;
+	background:rgba(183,81,235,1.00);
+	z-index: 3;
+	transform: rotate(300deg);
+}
+
+.p7{
+	display: inline;
+	width: 200px;
+	height: 300px;
+	background:rgba(183,81,235,1.00);
+	z-index: 3;
+	transform: rotate(60deg);
+}
+
+
+@-webkit-keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@-o-keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@-ms-keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,157 @@
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', 'dotum' ;
+}
+
+html{
+	min-height: 100vh;
+}
+
+body{
+	background: -webkit-linear-gradient(to bottom,#00ccff 0%,#000 5%,#000 100%);
+	background: -moz-linear-gradient(to bottom,#00ccff 0%,#000 5%,#000 100%);
+	background: -o-linear-gradient(to bottom,#00ccff 0%,#000 5%,#000 100%);
+	background: -ms-linear-gradient(to bottom,#00ccff 0%,#000 5%,#000 100%);
+	background: linear-gradient(to bottom,#00ccff 0%,#000 5%,#000 100%);
+	overflow: hidden;
+}
+
+
+.home{
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	z-index: 999;
+}
+
+.text{
+	width: 300px;
+	position: absolute;
+	bottom:200px;
+	color: #ccc;
+	font-style: italic;
+	font-size: 5em;
+	animation: bye 30s linear forwards;
+}
+
+
+
+.hole{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -75px;
+	margin-left: -75px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border:solid #fff 2px;
+	background: transparent;
+	filter: blur(3px);
+	-webkit-animation: fadein 5s 14s cubic-bezier(.29,.24,.59,.98) forwards;
+	-moz-animation: fadein 5s 14s cubic-bezier(.29,.24,.59,.98) forwards;
+	-o-animation: fadein 5s 14s cubic-bezier(.29,.24,.59,.98) forwards;
+	-ms-animation: fadein 5s 14s cubic-bezier(.29,.24,.59,.98) forwards;
+	animation: fadein 5s 14s cubic-bezier(.29,.24,.59,.98) forwards;
+	opacity: 0;
+}
+
+@-webkit-keyframes bye{
+	0%{
+		right: -300px;
+	}
+	100%{
+		right: 110%;
+	}
+}
+@-moz-keyframes bye{
+	0%{
+		right: -300px;
+	}
+	100%{
+		right: 110%;
+	}
+}
+@-o-keyframes bye{
+	0%{
+		right: -300px;
+	}
+	100%{
+		right: 110%;
+	}
+}
+@-ms-keyframes bye{
+	0%{
+		right: -300px;
+	}
+	100%{
+		right: 110%;
+	}
+}
+@keyframes bye{
+	0%{
+		right: -300px;
+	}
+	100%{
+		right: 110%;
+	}
+}
+
+@-webkit-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@-o-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@-ms-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}

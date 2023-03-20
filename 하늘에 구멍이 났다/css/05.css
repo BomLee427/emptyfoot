@@ -1,0 +1,474 @@
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', 'dotum' ;
+}
+
+html{
+	min-height: 100vh;
+}
+
+body{
+	overflow: hidden;
+	background-image: -webkit-linear-gradient(to top,#3a1111 5%,transparent 40%, transparent 100%);
+	background-image: -moz-linear-gradient(to top,#3a1111 5%,transparent 40%, transparent 100%);
+	background-image: -o-linear-gradient(to top,#3a1111 5%,transparent 40%, transparent 100%);
+	background-image: -ms-linear-gradient(to top,#3a1111 5%,transparent 40%, transparent 100%);
+	background-image: linear-gradient(to top,#3a1111 5%,transparent 40%, transparent 100%);
+	-webkit-animation: colorchange 40s linear infinite;
+	-moz-animation: colorchange 40s linear infinite;
+	-o-animation: colorchange 40s linear infinite;
+	-ms-animation: colorchange 40s linear infinite;
+	animation: colorchange 40s linear infinite;
+}
+
+.home{
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	z-index: 999;
+}
+
+.hole{
+	position:fixed;
+	top: 50px;
+	left:50%;
+	margin-left: -100px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border:solid #ffffdd 5px;
+	background: transparent;
+	filter: blur(4px);
+	z-index: 3;
+	opacity: 0;
+	-webkit-animation: fadein 5s linear forwards;
+	-moz-animation: fadein 5s linear forwards;
+	-o-animation: fadein 5s linear forwards;
+	-ms-animation: fadein 5s linear forwards;
+	animation: fadein 5s linear forwards;
+}
+
+.bottom{
+	width: 100vw;
+	height: 250px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	border: 0;
+	background: rgba(255,255,255,.2);
+	filter:blur(5px);
+}
+
+.circle{
+	border:0;
+	width: 1000px;
+	height: 1000px;
+	background: transparent;
+	border-radius: 50%;
+	position: absolute;
+	top:-500px;
+	left:50%;
+	margin-left:-500px;
+	-webkit-animation: rotate 40s linear infinite;
+	-moz-animation: rotate 40s linear infinite;
+	-o-animation: rotate 40s linear infinite;
+	-ms-animation: rotate 40s linear infinite;
+	animation: rotate 40s linear infinite;
+}
+
+.c1{
+	position: absolute;
+	top:0px;
+	left:0px;
+	-webkit-animation: rotate 40s linear reverse infinite;
+	-moz-animation: rotate 40s linear reverse infinite;
+	-o-animation: rotate 40s linear reverse infinite;
+	-ms-animation: rotate 40s linear reverse infinite;
+	animation: rotate 40s linear reverse infinite;
+}
+
+.c2{
+	position: absolute;
+	top:-125px;
+	left:50%;
+	margin-left:-125px;
+	-webkit-animation: rotate 40s linear reverse infinite;
+	-moz-animation: rotate 40s linear reverse infinite;
+	-o-animation: rotate 40s linear reverse infinite;
+	-ms-animation: rotate 40s linear reverse infinite;
+	animation: rotate 40s linear reverse infinite;
+}
+
+.c3{
+	position: absolute;
+	top:0px;
+	right:0px;
+	-webkit-animation: rotate 40s linear reverse infinite;
+	-moz-animation: rotate 40s linear reverse infinite;
+	-o-animation: rotate 40s linear reverse infinite;
+	-ms-animation: rotate 40s linear reverse infinite;
+	animation: rotate 40s linear reverse infinite;
+}
+
+.c4{
+	position: absolute;
+	top:50%;
+	right:-125px;
+	margin-top: -125px;
+	-webkit-animation: rotate 40s linear reverse infinite;
+	-moz-animation: rotate 40s linear reverse infinite;
+	-o-animation: rotate 40s linear reverse infinite;
+	-ms-animation: rotate 40s linear reverse infinite;
+	animation: rotate 40s linear reverse infinite;
+}
+
+.c5{
+	position: absolute;
+	bottom:-0px;
+	right:-0px;
+	-webkit-animation: rotate 40s linear reverse infinite;
+	-moz-animation: rotate 40s linear reverse infinite;
+	-o-animation: rotate 40s linear reverse infinite;
+	-ms-animation: rotate 40s linear reverse infinite;
+	animation: rotate 40s linear reverse infinite;
+}
+
+.c6{
+	position: absolute;
+	bottom:-125px;
+	left:50%;
+	margin-left: -125px;
+	-webkit-animation: rotate 40s linear reverse infinite;
+	-moz-animation: rotate 40s linear reverse infinite;
+	-o-animation: rotate 40s linear reverse infinite;
+	-ms-animation: rotate 40s linear reverse infinite;
+	animation: rotate 40s linear reverse infinite;
+}
+
+.c7{
+	position: absolute;
+	bottom:-0px;
+	left:-0px;
+	-webkit-animation: rotate 40s linear reverse infinite;
+	-moz-animation: rotate 40s linear reverse infinite;
+	-o-animation: rotate 40s linear reverse infinite;
+	-ms-animation: rotate 40s linear reverse infinite;
+	animation: rotate 40s linear reverse infinite;
+}
+
+.c8{
+	position: absolute;
+	top:50%;
+	left:-125px;
+	margin-top: -125px;
+	-webkit-animation: rotate 40s linear reverse infinite;
+	-moz-animation: rotate 40s linear reverse infinite;
+	-o-animation: rotate 40s linear reverse infinite;
+	-ms-animation: rotate 40s linear reverse infinite;
+	animation: rotate 40s linear reverse infinite;
+}
+
+.waltz{
+	width: 300px;
+	position: absolute;
+	bottom: 50px;;
+	left: 50%;
+	margin-left: -150px;
+	opacity: .8;
+}
+
+
+@-webkit-keyframes fadein{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@-moz-keyframes fadein{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@-o-keyframes fadein{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@-ms-keyframes fadein{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes fadein{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+
+@-webkit-keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@-moz-keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@-o-keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@-ms-keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes colorchange{
+	0%{
+	background-color:#eca4dd;
+	}
+	
+	12.5%{
+	background-color:#252a42;
+	}
+	
+	25%{
+	background-color:#87cfd8;
+	}
+	
+	37.5%{
+	background-color:#b59f65;
+	}
+	
+	50%{
+	background-color:#648375;
+	}
+	
+	62.5%{
+	background-color:#3417e1;
+	}
+	
+	75%{
+	background-color:#772f2f;
+	}
+	
+	87.5%{
+	background-color:#acbcc5;
+	}
+	
+	100%{
+	background-color:#eca4dd;
+	}
+	
+}
+
+@-moz-keyframes colorchange{
+	0%{
+	background-color:#eca4dd;
+	}
+	
+	12.5%{
+	background-color:#252a42;
+	}
+	
+	25%{
+	background-color:#87cfd8;
+	}
+	
+	37.5%{
+	background-color:#b59f65;
+	}
+	
+	50%{
+	background-color:#648375;
+	}
+	
+	62.5%{
+	background-color:#3417e1;
+	}
+	
+	75%{
+	background-color:#772f2f;
+	}
+	
+	87.5%{
+	background-color:#acbcc5;
+	}
+	
+	100%{
+	background-color:#eca4dd;
+	}
+	
+}
+
+@-o-keyframes colorchange{
+	0%{
+	background-color:#eca4dd;
+	}
+	
+	12.5%{
+	background-color:#252a42;
+	}
+	
+	25%{
+	background-color:#87cfd8;
+	}
+	
+	37.5%{
+	background-color:#b59f65;
+	}
+	
+	50%{
+	background-color:#648375;
+	}
+	
+	62.5%{
+	background-color:#3417e1;
+	}
+	
+	75%{
+	background-color:#772f2f;
+	}
+	
+	87.5%{
+	background-color:#acbcc5;
+	}
+	
+	100%{
+	background-color:#eca4dd;
+	}
+	
+}
+
+@-ms-keyframes colorchange{
+	0%{
+	background-color:#eca4dd;
+	}
+	
+	12.5%{
+	background-color:#252a42;
+	}
+	
+	25%{
+	background-color:#87cfd8;
+	}
+	
+	37.5%{
+	background-color:#b59f65;
+	}
+	
+	50%{
+	background-color:#648375;
+	}
+	
+	62.5%{
+	background-color:#3417e1;
+	}
+	
+	75%{
+	background-color:#772f2f;
+	}
+	
+	87.5%{
+	background-color:#acbcc5;
+	}
+	
+	100%{
+	background-color:#eca4dd;
+	}
+	
+}
+
+@keyframes colorchange{
+	0%{
+	background-color:#eca4dd;
+	}
+	
+	12.5%{
+	background-color:#252a42;
+	}
+	
+	25%{
+	background-color:#87cfd8;
+	}
+	
+	37.5%{
+	background-color:#b59f65;
+	}
+	
+	50%{
+	background-color:#648375;
+	}
+	
+	62.5%{
+	background-color:#3417e1;
+	}
+	
+	75%{
+	background-color:#772f2f;
+	}
+	
+	87.5%{
+	background-color:#acbcc5;
+	}
+	
+	100%{
+	background-color:#eca4dd;
+	}
+	
+}

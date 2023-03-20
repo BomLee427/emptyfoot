@@ -1,0 +1,294 @@
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', 'dotum' ;
+}
+
+html{
+	min-height: 100vh;
+}
+
+body{
+	background: #000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.home{
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	z-index: 999;
+}
+
+
+.wtr{
+	width: 720px;
+	height: 570px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -285px;
+	margin-left: -360px;
+	z-index: 10;
+}
+
+.hole{
+	position:absolute;
+	top: -90px;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	height: 300px;
+	border: 0;
+	background: url(../img/swmlegs.png) rgba(255,255,255,0.7) no-repeat;
+	background-position: bottom;
+	background-size: 70%;
+	border-radius: 50%;
+	filter: blur(2px);
+	-webkit-animation: float 1.3s ease-out infinite alternate;
+	-moz-animation: float 1.3s ease-out infinite alternate;
+	-o-animation: float 1.3s ease-out infinite alternate;
+	-ms-animation: float 1.3s ease-out infinite alternate;
+	animation: float 1.3s ease-out infinite alternate;
+	z-index: 15;
+}
+
+.hisung{
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin-top: -100px;
+	margin-left: -25px;
+	z-index: 10;
+}
+
+
+.txt1{
+	position:absolute;
+	width: 1000px;
+	top: 12px;
+	left: 50%;
+	margin-left: -500px;
+	color: rgba(0,150,255,0.3);
+	font-size: 2.2em;
+	font-weight: 100;
+	z-index: 1;
+}
+
+.txt2{
+	position:absolute;
+	width: 1000px;
+	left: 50%;
+	margin-left: -500px;
+	color: rgba(200,200,200,0.3);
+	font-size: 2.2em;
+	font-weight: 100;
+	z-index: 0;
+}
+
+.txt3{
+	position:absolute;
+	width: 1000px;
+	left: 50%;
+	top:-12px;
+	margin-left: -500px;
+	color: rgba(255,0,0,0.3);
+	font-size: 2.2em;
+	font-weight: 100;
+	z-index: -1;
+}
+
+.txt4{
+	position:absolute;
+	width: 1000px;
+	left: 50%;
+	top: 20px;
+	margin-left: -500px;
+	color: rgba(200,200,0,0.3);
+	font-size: 2.2em;
+	font-weight: 100;
+	z-index: -1;
+}
+
+.fin{
+	width: 150px;
+	position:absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -85px;
+	z-index: 15;
+}
+
+
+.fadeout{
+	-webkit-animation: fadeout .6s linear forwards;
+	-moz-animation: fadeout .6s linear forwards;
+	-o-animation: fadeout .6s linear forwards;
+	-ms-animation: fadeout .6s linear forwards;
+	animation: fadeout .6s linear forwards;
+}
+
+
+.fadein{
+	-webkit-animation: fadein .6s linear forwards;
+	-moz-animation: fadein .6s linear forwards;
+	-o-animation: fadein .6s linear forwards;
+	-ms-animation: fadein .6s linear forwards;
+	animation: fadein .6s linear forwards;
+}
+
+@-webkit-keyframes float{
+	0%{
+		top: -90px;
+	}
+	
+	100%{
+		top: -120px;
+	}
+}
+@-moz-keyframes float{
+	0%{
+		top: -90px;
+	}
+	
+	100%{
+		top: -120px;
+	}
+}
+@-o-keyframes float{
+	0%{
+		top: -90px;
+	}
+	
+	100%{
+		top: -120px;
+	}
+}
+@-ms-keyframes float{
+	0%{
+		top: -90px;
+	}
+	
+	100%{
+		top: -120px;
+	}
+}
+@keyframes float{
+	0%{
+		top: -90px;
+	}
+	
+	100%{
+		top: -120px;
+	}
+}
+
+@-webkit-keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+@-moz-keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+@-o-keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+@-ms-keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+
+
+@-webkit-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@-o-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@-ms-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+
+

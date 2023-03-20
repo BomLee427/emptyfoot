@@ -1,0 +1,289 @@
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Serif KR', 'dotum' ;
+	font-size: .95em;
+}
+
+html{
+	min-height: 100vh;
+}
+
+body{
+	-webkit-background: linear-gradient(to bottom, #33282e 50%, #7e6f6c);
+	-moz-background: linear-gradient(to bottom, #33282e 50%, #7e6f6c);
+	-o-background: linear-gradient(to bottom, #33282e 50%, #7e6f6c);
+	-ms-background: linear-gradient(to bottom, #33282e 50%, #7e6f6c);
+	background: linear-gradient(to bottom, #33282e 50%, #7e6f6c);
+	overflow: hidden;
+}
+
+
+.home{
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	z-index: 999;
+}
+
+.dst{
+	height: 100vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hole{
+	border: 0;
+	width: 80px;
+	height: 80px;
+	background: #FF0000;
+	border-radius: 50%;
+	position: absolute;
+	top: 120px;
+	left: 30%;
+}
+
+.hana{
+	position: absolute;
+	bottom: 50px;
+	right: 30%;
+}
+
+.plane{
+	position: absolute;
+	top:30%;
+	right: -105px;
+	animation: flying 8s linear infinite;
+}
+
+.jina{
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+}
+
+.txt1{
+	width: 250px;
+	position: absolute;
+	bottom: 30%;
+	right: 5%;
+	border: solid #000000 1px;
+	background: #ffffff;
+	font-size: 0.9em;
+	opacity: .8;
+	padding: 10px 15px;
+}
+
+.txt2{
+	width: 200px;
+	position: absolute;
+	top:40%;
+	left:50%;
+	margin-left: -100px;
+	text-align: center;
+	border: solid #000000 1px;
+	background: #000000;
+	color: #ffffff;
+	font-size: 0.9em;
+	opacity: 0;
+	padding: 10px 15px;
+}
+
+.hr1{
+	width: 3000px;
+	position: absolute;
+	top:55%;
+	right: -120%;
+	border: solid 1px #ffffff;
+	background: #fff;
+	transform: rotate(110deg);	
+}
+
+.hr2{
+	width: 3000px;
+	position: absolute;
+	bottom:35%;
+	right: -50%;
+	border: solid 1px #ff0000;
+	background: #ff0000;
+	transform: rotate(170deg);
+}
+
+.fadeout{
+	animation: fadeout 1s linear forwards;
+}
+
+.fadein{
+	animation: fadein 1s linear forwards;
+}
+
+.blackout{
+	animation: blackout .6s linear forwards;
+}
+
+
+
+@-webkit-keyframes flying{
+	0%{
+		right: -105px;
+	}
+	
+	100%{
+		right: 110%;
+	}
+}
+
+@-moz-keyframes flying{
+	0%{
+		right: -105px;
+	}
+	
+	100%{
+		right: 110%;
+	}
+}
+
+@-o-keyframes flying{
+	0%{
+		right: -105px;
+	}
+	
+	100%{
+		right: 110%;
+	}
+}
+
+@-ms-keyframes flying{
+	0%{
+		right: -105px;
+	}
+	
+	100%{
+		right: 110%;
+	}
+}
+
+@keyframes flying{
+	0%{
+		right: -105px;
+	}
+	
+	100%{
+		right: 110%;
+	}
+}
+
+@-webkit-keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+
+@-o-keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+
+
+@-webkit-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: .8;
+	}
+}
+
+@-moz-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: .8;
+	}
+}
+
+@-o-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: .8;
+	}
+}
+
+@-ms-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: .8;
+	}
+}
+
+@keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: .8;
+	}
+}

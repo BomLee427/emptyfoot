@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Serif KR', 'dotum' ;
+}
+
+html{
+	min-height: 100vh;
+}
+
+body{
+	background: url(../img/sp01bg.gif) no-repeat top center;
+	background-size: cover;
+	font-size: 0.8em;
+	overflow: hidden;
+}
+
+.home{
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	z-index: 999;
+}
+
+.stair{
+	position: absolute;
+	bottom: 0;
+	left:50%;
+	margin-left: -451px;
+	z-index: -10;
+}
+
+.trph{
+	position: absolute;
+	bottom:100px;
+	right:30%;
+}
+
+.gift{
+	position: absolute;
+	bottom:265px;
+	left:30%;
+}
+
+.glass{
+	position: absolute;
+	bottom:445px;
+	left:50%;
+}
+
+.jina{
+	width: 200px;
+	position: absolute;
+	bottom:100px;
+	left:20%;
+}
+
+.fish{
+	width: 150px;
+	position: absolute;
+	bottom:370px;
+	right:30%;
+}
+
+.sentence{
+	width: 320px;
+	background: #fff;
+	border: solid #000 1px;
+	padding: 12px 15px;
+	text-align: center;
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin-left: -160px;
+	z-index: 10;
+}
+
+.form{
+	display: inline-block;
+	width: 180px;
+}
+
+.hole{
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-radius: 50%;
+	background: radial-gradient(circle,#d6effd,#a50000);
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left: -25px;
+	filter:blur(2px);
+}
+
+.float{
+	-webkit-animation: float 1s ease-in infinite alternate;
+	-moz-animation: float 1s ease-in infinite alternate;
+	-o-animation: float 1s ease-in infinite alternate;
+	-ms-animation: float 1s ease-in infinite alternate;
+	animation: float 1s ease-in infinite alternate;
+}
+
+@-webkit-keyframes float{
+	0%{
+		margin-top: 200px;
+	}
+	100%{
+		margin-top: 220px;
+	}
+}
+@-moz-keyframes float{
+	0%{
+		margin-top: 200px;
+	}
+	100%{
+		margin-top: 220px;
+	}
+}
+@-ms-keyframes float{
+	0%{
+		margin-top: 200px;
+	}
+	100%{
+		margin-top: 220px;
+	}
+}
+@-o-keyframes float{
+	0%{
+		margin-top: 200px;
+	}
+	100%{
+		margin-top: 220px;
+	}
+}
+@keyframes float{
+	0%{
+		margin-top: 200px;
+	}
+	100%{
+		margin-top: 220px;
+	}
+}

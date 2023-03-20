@@ -1,0 +1,134 @@
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', 'dotum' ;
+}
+
+html{
+	min-height: 100vh;
+}
+
+body{
+	background: -webkit-url(../img/city2.png) no-repeat left bottom, url(../img/back.png) no-repeat right bottom, url(../img/city.png) no-repeat left bottom fixed, linear-gradient(to bottom, #f3d4e0 30%,#909aa7);
+	background: -moz-url(../img/city2.png) no-repeat left bottom, url(../img/back.png) no-repeat right bottom, url(../img/city.png) no-repeat left bottom fixed, linear-gradient(to bottom, #f3d4e0 30%,#909aa7);
+	background: -o-url(../img/city2.png) no-repeat left bottom, url(../img/back.png) no-repeat right bottom, url(../img/city.png) no-repeat left bottom fixed, linear-gradient(to bottom, #f3d4e0 30%,#909aa7);
+	background: -ms-url(../img/city2.png) no-repeat left bottom, url(../img/back.png) no-repeat right bottom, url(../img/city.png) no-repeat left bottom fixed, linear-gradient(to bottom, #f3d4e0 30%,#909aa7);
+	background: url(../img/city2.png) no-repeat left bottom, url(../img/back.png) no-repeat right bottom, url(../img/city.png) no-repeat left bottom fixed, linear-gradient(to bottom, #f3d4e0 30%,#909aa7);
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.home{
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	z-index: 999;
+}
+
+.hole{
+	border: 0;
+	width: 400px;
+	height: 80px;
+	background: linear-gradient(to right,#a9d1d5 10%,#66223d 60%,#66223d 80%,#a9d1d5 100%);
+	border-radius: 50%;
+	position: fixed;
+	top: 200px;
+	left: 50%;
+	margin-left: -200px;
+	transform: rotate(90deg);
+	-webkit-animation: blinks 1.8s linear infinite alternate;
+	-moz-animation: blinks 1.8s linear infinite alternate;
+	-o-animation: blinks 1.8s linear infinite alternate;
+	-ms-animation: blinks 1.8s linear infinite alternate;
+	animation: blinks 1.8s linear infinite alternate;
+	box-shadow: 10px 0px 2px 0px rgba(0,0,180,.8);
+	z-index: 999;
+}
+
+
+.content{
+	width: 2000px;
+	height: 100vh;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.run{
+	position: fixed;
+	left: 50px;
+	bottom:5px;
+}
+
+
+@-webkit-keyframes blinks{
+	0%{
+		height: 80px;
+	}
+	90%{
+		height: 80px;
+	}
+	100%{
+		height: 0px;
+	}
+}
+
+@-moz-keyframes blinks{
+	0%{
+		height: 80px;
+	}
+	90%{
+		height: 80px;
+	}
+	100%{
+		height: 0px;
+	}
+}
+
+@-o-keyframes blinks{
+	0%{
+		height: 80px;
+	}
+	90%{
+		height: 80px;
+	}
+	100%{
+		height: 0px;
+	}
+}
+
+@-ms-keyframes blinks{
+	0%{
+		height: 80px;
+	}
+	90%{
+		height: 80px;
+	}
+	100%{
+		height: 0px;
+	}
+}
+
+@keyframes blinks{
+	0%{
+		height: 80px;
+	}
+	90%{
+		height: 80px;
+	}
+	100%{
+		height: 0px;
+	}
+}

@@ -1,0 +1,102 @@
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Serif KR', 'dotum' ;
+	font-size: .95em;
+}
+
+html{
+	min-height: 100%;
+}
+
+body{
+	background: linear-gradient(to bottom,#bbc1d2 5%,#fff8f9 30%,#fff8f9 90%,#2a261f 99%);
+}
+
+#blackout{
+	z-index: 999;
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: #000000;
+}
+
+.blackout{
+	animation: blackout .5s linear forwards;
+}
+
+.blackin{
+	animation: blackout .5s linear reverse forwards;
+}
+
+
+.text{
+	padding: 15px 20px;
+	border: solid 1px #000000;
+	background-color: rgba(255,255,255,0.8);
+	width:180px;
+	text-align: center;
+	position: absolute;
+	left:50%;
+	top:20%;
+	margin-left: -90px;
+	animation: dropdownfadein .45s linear forwards;
+}
+
+
+
+.hole{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -75px;
+	margin-left: -75px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border:solid #000000 2px;
+	background: transparent;
+	filter: blur(3px);
+	animation: fadein 2s 1.7s cubic-bezier(.29,.24,.59,.98) forwards;
+	opacity: 0;
+}
+
+@keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes dropdownfadein {
+	0%{
+		top: 19%;
+		opacity: 0;
+	}
+	
+	80%{
+		opacity: 1;
+	}
+	
+	100%{
+		top: 20%;
+	}
+}

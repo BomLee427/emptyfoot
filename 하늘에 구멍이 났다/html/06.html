@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/06.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+<meta http-equiv="refresh" content="180; URL=http://beyondthefaith.com">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../script/06.js"></script>
+<title>믿음의 계단</title>
+</head>
+
+<body>
+	<img src="../img/altar.png" alt="" class="stair">
+	<div class="sentence">
+			언젠가 우리는 <input type="text" name="noenter" id="will" class="form" autocomplete="off" onkeydown="enter()"> 다.
+	</div>
+			<input type="button" id="hole" class="hole float" onClick="check()">
+	<img src="../img/trp.gif" alt="" id="trph" class="trph">
+	<img src="../img/gift.gif" alt="" id="gift" class="gift">
+	<img src="../img/glass.png" alt="" id="glass" class="glass">
+	<img src="../img/a06-jina.png" alt="" id="jina" class="jina">
+	<img src="../img/fish.gif" alt="" id="fish" class="fish">
+	<img src="../img/home.png" alt="" class="home" onClick="location.href='../index.html'">
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("input[name=noenter]").keydown(function (key) {
+
+				if(key.keyCode == 13){//키가 13이면 실행 (엔터는 13)
+						alert("동그란 구멍을 클릭하세요.");
+				}
+
+			});
+		});
+ 
+</script>
+</body>
+</html>

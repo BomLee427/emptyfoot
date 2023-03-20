@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR);
+/* Web font */
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: url(../img/tokimeki.gif) repeat-y, #c42263;
+	overflow: hidden;
+}
+
+.home{
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	z-index: 999;
+}
+
+.sub{
+	display:block;
+	text-align: center;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	font-family: "Noto Serif KR";
+	font-size: 2em;
+}
+
+.t1{
+	-webkit-animation: subtitle 2.8s .5s linear forwards;
+	-moz-animation: subtitle 2.8s .5s linear forwards;
+	-o-animation: subtitle 2.8s .5s linear forwards;
+	-ms-animation: subtitle 2.8s .5s linear forwards;
+	animation: subtitle 2.8s .5s linear forwards;
+	opacity: 0;
+	background: rgba(255,255,255,1);
+	margin: 50px 0px;	
+}
+
+.t2{
+	-webkit-animation: subtitle 3.5s 3.6s linear forwards;
+	-moz-animation: subtitle 3.5s 3.6s linear forwards;
+	-o-animation: subtitle 3.5s 3.6s linear forwards;
+	-ms-animation: subtitle 3.5s 3.6s linear forwards;
+	animation: subtitle 3.5s 3.6s linear forwards;
+	opacity: 0;
+	background: rgba(255,255,255,1);
+	margin: 50px 0px;	
+}
+
+.t3{
+	-webkit-animation: subtitle 3.4s 7.6s linear forwards;
+	-moz-animation: subtitle 3.4s 7.6s linear forwards;
+	-o-animation: subtitle 3.4s 7.6s linear forwards;
+	-ms-animation: subtitle 3.4s 7.6s linear forwards;
+	animation: subtitle 3.4s 7.6s linear forwards;
+	opacity: 0;
+	background: rgba(255,255,255,1);
+	margin: 50px 0px;	
+}
+
+.t4{
+	-webkit-animation: subtitle 3.7s 11.5s linear forwards;
+	-moz-animation: subtitle 3.7s 11.5s linear forwards;
+	-o-animation: subtitle 3.7s 11.5s linear forwards;
+	-ms-animation: subtitle 3.7s 11.5s linear forwards;
+	animation: subtitle 3.7s 11.5s linear forwards;
+	opacity: 0;
+	background: rgba(255,255,255,1);
+	margin: 50px 0px;	
+}
+
+.t5{
+	-webkit-animation: subtitle 4.1s 15.5s linear forwards;
+	-moz-animation: subtitle 4.1s 15.5s linear forwards;
+	-o-animation: subtitle 4.1s 15.5s linear forwards;
+	-ms-animation: subtitle 4.1s 15.5s linear forwards;
+	animation: subtitle 4.1s 15.5s linear forwards;
+	opacity: 0;
+	background: rgba(255,255,255,1);
+	margin: 50px 0px;	
+}
+
+.t6{
+	-webkit-animation: subtitle 3s 20s linear forwards;
+	-moz-animation: subtitle 3s 20s linear forwards;
+	-o-animation: subtitle 3s 20s linear forwards;
+	-ms-animation: subtitle 3s 20s linear forwards;
+	animation: subtitle 3s 20s linear forwards;
+	opacity: 0;
+	background: rgba(255,255,255,1);
+	margin: 50px 0px;	
+}
+
+.t7{
+	-webkit-animation: subtitle 3.8s 23.5s linear forwards;
+	-moz-animation: subtitle 3.8s 23.5s linear forwards;
+	-o-animation: subtitle 3.8s 23.5s linear forwards;
+	-ms-animation: subtitle 3.8s 23.5s linear forwards;
+	animation: subtitle 3.8s 23.5s linear forwards;
+	opacity: 0;
+	background: rgba(255,255,255,1);
+	margin: 50px 0px;	
+}
+
+.t8{
+	-webkit-animation: subtitle 4.5s 27.5s linear forwards;
+	-moz-animation: subtitle 4.5s 27.5s linear forwards;
+	-o-animation: subtitle 4.5s 27.5s linear forwards;
+	-ms-animation: subtitle 4.5s 27.5s linear forwards;
+	animation: subtitle 4.5s 27.5s linear forwards;
+	opacity: 0;
+	background: rgba(255,255,255,1);
+	margin: 50px 0px;	
+}
+
+.blink{
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top:-125px;
+	margin-left:-89px;
+}
+
+.hole{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top:30%;
+	left:50%;
+	margin-left:-15px;
+	border: none;
+	border-radius: 50px;
+	background-color: #ffffff;
+	z-index: 999;
+}
+
+
+@-webkit-keyframes subtitle{
+	0%{
+		opacity: 0;
+	}
+	
+	1%{
+		opacity: 1;
+	}
+	
+	99%{
+		opacity: 1;
+	}
+	
+	
+	100%{
+		opacity: 0;
+	}
+}
+@-moz-keyframes subtitle{
+	0%{
+		opacity: 0;
+	}
+	
+	1%{
+		opacity: 1;
+	}
+	
+	99%{
+		opacity: 1;
+	}
+	
+	
+	100%{
+		opacity: 0;
+	}
+}
+@-o-keyframes subtitle{
+	0%{
+		opacity: 0;
+	}
+	
+	1%{
+		opacity: 1;
+	}
+	
+	99%{
+		opacity: 1;
+	}
+	
+	
+	100%{
+		opacity: 0;
+	}
+}
+@-ms-keyframes subtitle{
+	0%{
+		opacity: 0;
+	}
+	
+	1%{
+		opacity: 1;
+	}
+	
+	99%{
+		opacity: 1;
+	}
+	
+	
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes subtitle{
+	0%{
+		opacity: 0;
+	}
+	
+	1%{
+		opacity: 1;
+	}
+	
+	99%{
+		opacity: 1;
+	}
+	
+	
+	100%{
+		opacity: 0;
+	}
+}
